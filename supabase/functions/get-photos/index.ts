@@ -26,7 +26,7 @@ Deno.serve(async (req) => {
       },
       body: JSON.stringify({
         expression: 'folder=portfolio',
-        max_results: 30,
+        max_results: 100,
         sort_by: [{ created_at: 'desc' }],
       }),
     });
