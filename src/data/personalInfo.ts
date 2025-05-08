@@ -15,7 +15,7 @@ export const personalInfo: PersonalInfo = {
   name: 'Ziv Mahluf',
   title: 'Unity Game Developer',
   description: 'I create immersive experiences for various platforms including VR, AR, Mobile and Web. With expertise in Unity development, I bring digital worlds to life.',
-  image: 'assets/linkedin_profile_photo_25.jpg',
+  image: '/assets/linkedin_profile_photo_25.jpg',
   email: 'Ziv5467@gmail.com',
   phone: '(+972) 546656993',
   socialLinks: {

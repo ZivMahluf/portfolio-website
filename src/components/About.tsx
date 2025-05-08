@@ -10,7 +10,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="w-full max-w-md mx-auto overflow-hidden transform hover:scale-105 transition-all duration-300">
               <img 
-                src="assets/new_image.jpg" 
+                src="/assets/new_image.jpg" 
                 alt="About Ziv Mahluf" 
                 className="w-full h-auto"
               />
