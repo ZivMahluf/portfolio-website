@@ -28,18 +28,18 @@ Deno.serve(async (req) => {
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     );
 
-    // Send email using Supabase's built-in email service
-    const { error } = await supabaseClient.auth.admin.sendEmail(
-      Deno.env.get('ADMIN_EMAIL') ?? '',
-      {
+    // Send email using Supabase's email service
+    const { error } = await supabaseClient.functions.invoke('send-contact-email', {
+      body: {
+        to: Deno.env.get('ADMIN_EMAIL'),
         subject: `New Contact Form Submission from ${name}`,
-        template_data: {
-          name,
-          email,
-          message,
-        },
-      }
-    );
+        text: `
+          Name: ${name}
+          Email: ${email}
+          Message: ${message}
+        `,
+      },
+    });
 
     if (error) throw error;
 
@@ -51,6 +51,7 @@ Deno.serve(async (req) => {
       }
     );
   } catch (error) {
+    console.error('Error sending email:', error);
     return new Response(
       JSON.stringify({ 
         error: 'Failed to send email',
@@ -58,7 +59,7 @@ Deno.serve(async (req) => {
       }),
       {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-        status: 400,
+        status: 500,
       }
     );
   }
