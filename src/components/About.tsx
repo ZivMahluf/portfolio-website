@@ -1,6 +1,4 @@
 import React from 'react';
-import { Download } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo';
 
 const About: React.FC = () => {
   return (

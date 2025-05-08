@@ -34,24 +34,24 @@ const AdminStats: React.FC = () => {
 
       const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
 
-      const { data: totalVisits } = await supabase
+      const { count: totalVisits } = await supabase
         .from('visitors')
-        .select('count', { count: 'exact' });
+        .select('*', { count: 'exact', head: true });
 
-      const { data: todayVisits } = await supabase
+      const { count: todayVisits } = await supabase
         .from('visitors')
-        .select('count', { count: 'exact' })
+        .select('*', { count: 'exact', head: true })
         .gte('timestamp', today.toISOString());
 
-      const { data: monthVisits } = await supabase
+      const { count: monthVisits } = await supabase
         .from('visitors')
-        .select('count', { count: 'exact' })
+        .select('*', { count: 'exact', head: true })
         .gte('timestamp', firstDayOfMonth.toISOString());
 
       setStats({
-        total: totalVisits?.count || 0,
-        today: todayVisits?.count || 0,
-        thisMonth: monthVisits?.count || 0
+        total: totalVisits || 0,
+        today: todayVisits || 0,
+        thisMonth: monthVisits || 0
       });
     };
 
