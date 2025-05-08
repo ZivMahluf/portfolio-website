@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="w-full max-w-md mx-auto overflow-hidden transform hover:scale-105 transition-all duration-300">
               <img 
-                src="https://images.pexels.com/photos/7055954/pexels-photo-7055954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src="assets/new_image.jpg" 
                 alt="About Ziv Mahluf" 
                 className="w-full h-auto"
               />
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             My portfolio includes projects in 2D, 3D, VR, AR, Web and more.
           </p>
           <p className="text-lg text-gray-700 mb-6">
-            I'm a former lecturer and researcher at the Hebrew University of Jerusalem, where I taught VR development
+            I'm a former lecturer and researcher at the Hebrew University of Jerusalem, where I taught VR game development
             and researched Redirected Walking techniques.
           </p>
           <p className="text-lg text-gray-700 mb-8">
@@ -46,6 +46,7 @@ const About: React.FC = () => {
             <span className="tech-badge bg-gray-800">3D Modeling</span>
             <span className="tech-badge bg-gray-800">VRTK</span>
             <span className="tech-badge bg-gray-800">XR</span>
+            <span className="tech-badge bg-gray-800">Game Development</span>
           </div>
         </div>
       </div>
