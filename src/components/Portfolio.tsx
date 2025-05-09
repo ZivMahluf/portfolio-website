@@ -59,6 +59,12 @@ const Portfolio: React.FC<PortfolioProps> = ({ activeFilter, setActiveFilter }) 
         >
           Games
         </button>
+        <button 
+          onClick={() => setActiveFilter('Web')} 
+          className={`filter-btn ${activeFilter === 'Web' ? 'active' : ''}`}
+        >
+          Web
+        </button>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

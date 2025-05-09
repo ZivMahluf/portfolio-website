@@ -3,6 +3,7 @@ export interface ProjectLink {
   appStore?: string;
   video?: string;
   article?: string;
+  github?: string;
 }
 
 export interface Project {
@@ -94,6 +95,16 @@ export const projects: Project[] = [
     categories: ['AR', '3D'],
     links: {
       video: 'https://www.youtube.com/watch?v=aWdA_T-FDaY'
+    }
+  },
+  {
+    id: 11,
+    title: 'Portfolio Website',
+    description: 'Built a modern portfolio website using bolt.new for development and Netlify for deployment. Integrated multiple services including Cloudinary for image management, FormSubmit for contact form handling, Steam API for gaming activity, and Supabase for visitor tracking and database management.',
+    image: '/assets/work/portfolio_logo.png',
+    categories: ['Web', '2D'],
+    links: {
+      github: 'https://github.com/ZivMahluf/portfolio-website'
     }
   }
 ];
