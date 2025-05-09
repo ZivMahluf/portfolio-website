@@ -1,4 +1,4 @@
-# 🎮 My No-Code Gamer Portfolio #
+# 🎮 My No-Code Portfolio Website #
 
 Hey there! Welcome to my portfolio website, built with absolutely zero lines of code (okay, maybe a few tweaks here and there 😉). Here's how I stitched it all together:
 ## 🛠 Built With ##
@@ -13,6 +13,8 @@ Hey there! Welcome to my portfolio website, built with absolutely zero lines of 
 
     FormSubmit – Want to say hi? Drop a message through the contact form – no backend required.
 
+    Netlify - Hosting the website :)
+
 ## 🎯 Why I Made This ##
 
-I wanted a fun, fast, and functional way to show who I am – as a dev, a gamer, and a human. This site is a little playground where tech meets personality.
+I wanted a fun, fast, and functional way to show who I am – as a dev, a gamer, a photographer and a human. This site is a little playground where tech meets personality.
