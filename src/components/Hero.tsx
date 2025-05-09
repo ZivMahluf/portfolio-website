@@ -24,10 +24,10 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
             <a 
               href="/Ziv_Mahluf_CV.pdf" 
               target="_blank" 
-              className="btn-primary flex items-center justify-center"
+              className="btn-primary flex items-center py-2 px-4"
             >
               <Download size={18} className="mr-2" />
-              Download CV
+              <span>Download CV</span>
             </a>
             <button 
               onClick={() => scrollToSection('contact')} 
@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
         </div>
         
         <div className="md:w-1/2 relative">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border border-tech-700 transform hover:scale-105 transition-transform duration-300">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden transform hover:scale-105 transition-transform duration-300">
             <div className="absolute inset-0 bg-black/20"></div>
             <img 
               src={personalInfo.image}
