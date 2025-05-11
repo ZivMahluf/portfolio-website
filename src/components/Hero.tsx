@@ -23,11 +23,11 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           <div className="flex space-x-4">
             <a 
               href="/Ziv_Mahluf_CV.pdf" 
-              target="_blank" 
-              className="btn-primary flex items-center py-2 px-4"
+              download="Ziv_Mahluf_CV.pdf"
+              className="btn-primary flex items-center justify-center py-2 px-4 whitespace-nowrap"
             >
               <Download size={18} className="mr-2" />
-              <span>Download CV</span>
+              Download CV
             </a>
             <button 
               onClick={() => scrollToSection('contact')} 
