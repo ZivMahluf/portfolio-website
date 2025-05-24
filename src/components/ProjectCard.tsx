@@ -8,6 +8,8 @@ interface Link {
   appStore?: string;
   video?: string;
   article?: string;
+  github?: string;
+  website?: string;
 }
 
 interface Project {
@@ -111,6 +113,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                   >
                     <ExternalLink size={12} className="mr-1" />
                     Article
+                  </a>
+                )}
+
+                {project.links.github && (
+                  <a 
+                    href={project.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs px-2 py-1 rounded-full bg-purple-500 text-white flex items-center hover:bg-purple-600 transition-colors"
+                  >
+                    <ExternalLink size={12} className="mr-1" />
+                    Github
+                  </a>
+                )}
+
+                {project.links.website && (
+                  <a 
+                    href={project.links.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs px-2 py-1 rounded-full bg-purple-500 text-white flex items-center hover:bg-purple-600 transition-colors"
+                  >
+                    <ExternalLink size={12} className="mr-1" />
+                    Website
                   </a>
                 )}
               </div>

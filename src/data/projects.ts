@@ -4,6 +4,7 @@ export interface ProjectLink {
   video?: string;
   article?: string;
   github?: string;
+  website?: string;
 }
 
 export interface Project {
@@ -105,6 +106,16 @@ export const projects: Project[] = [
     categories: ['Web', '2D'],
     links: {
       github: 'https://github.com/ZivMahluf/portfolio-website'
+    }
+  },
+  {
+    id: 12,
+    title: 'evakhasis.com',
+    description: 'Built a psychologist portfolio website using bolt.new for development and Netlify for deployment. Used EmailJS for submitting contact me forms. ',
+    image: '/assets/work/evakhasis.png',
+    categories: ['Web', '2D'],
+    links: {
+      website: 'https://www.evakhasis.com'
     }
   }
 ];
