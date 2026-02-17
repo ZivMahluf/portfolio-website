@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           
           <div className="flex space-x-4">
             <a 
-              href="/Ziv_Mahluf_CV.pdf" 
+              href="/assets/Ziv_Mahluf_CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center justify-center py-2 px-4 whitespace-nowrap"
